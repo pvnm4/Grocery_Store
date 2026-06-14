@@ -1,9 +1,7 @@
 from pydantic import BaseModel
 
 class Product(BaseModel):
-    id: int
     name: str
-    description: str
     unit_name: str
     price_per_unit: float
     quantity: int
@@ -12,7 +10,7 @@ class Product(BaseModel):
         orm_mode = True
 
 class ProductResponse(BaseModel):
-    id: int
+    product_id: int
     name: str
     unit_name: str
     price_per_unit: float
@@ -23,14 +21,13 @@ class ProductResponse(BaseModel):
 
 class ProductCreate(BaseModel):
     name: str
-    description: str
     unit_name: str
     price_per_unit: float
-    quantity: int
+    quantity: int | None = None
 
-class Unit(BaseModel):
-    id: int
-    unit_name: str
+# class Unit(BaseModel):
+#     id: int
+#     unit_name: str
 
-    class Config:
-        from_attributes = True
+#     class Config:
+#         from_attributes = True

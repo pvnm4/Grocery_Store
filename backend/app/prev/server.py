@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify , json
-from sql_connection import get_sql_connection
-import products_dao
-import units_dao
+from backend.app.prev.sql_connection import get_sql_connection
+import backend.app.prev.products_dao as products_dao
+import backend.app.prev.units_dao as units_dao
 
 app = Flask(__name__)
 connection = get_sql_connection()

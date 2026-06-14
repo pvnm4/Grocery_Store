@@ -1,0 +1,7 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "This is a grocery store management system backend using FastAPI"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []

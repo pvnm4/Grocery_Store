@@ -1,0 +1,23 @@
+# Virtual Environment
+.venv/
+
+# Environment Variables
+.env
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# Alembic cache
+*.mako
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# extra files
+orm_connection.txt
+sql_connection.txt

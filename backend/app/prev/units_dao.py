@@ -11,7 +11,7 @@ def get_units(connection):
     return responce
 
 if __name__ == '__main__':
-    from sql_connection import get_sql_connection
+    from backend.app.prev.sql_connection import get_sql_connection
 
     connection = get_sql_connection()
     print(get_units(connection))
